@@ -1,0 +1,118 @@
+#footer {
+  
+}
+#footer div.adbox {
+  
+  background-color: #F29124;
+  background-image: url(https://adimg.cgv.co.kr/images/bg_temp_foot_banner2021.gif);
+  background-repeat: repeat-x;
+}
+#footer div.adbox .wrap {
+  
+  width: 980px;
+}
+#footer div.adbox .wrap a {
+  
+}
+#footer div.adbox .wrap a img {
+}
+#footer div.ftbox1 {
+  
+  padding-top: 30px;
+}
+#footer div.ftbox1 .ftinfo {
+  
+}
+#footer div.ftbox1 .ftinfo ul {
+  
+  line-height: 3.4;
+  border-bottom: 1px solid #e9e9e9;
+}
+#footer div.ftbox1 .ftinfo ul li:nth-child(8) >a {
+
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+#footer div.ftbox1 .ftinfo ul li {
+  
+}
+#footer div.ftbox1 .ftinfo ul li > a {
+  
+  font-size: 14px;
+  padding: 0 14px;
+}
+#footer div.ftbox1 .ftinfo ul li > a:hover{
+  text-decoration: underline;
+}
+#footer div.ftbox1 .ftinfo ul li:first-child > a{
+  
+  padding: 0;
+  padding-right: 14px;
+}
+#footer div.ftbox1 .ftinfo ul li:not(:last-child) > a {
+ 
+  border-right: 1px solid #9a9a9a;
+}
+#footer div.ftbox2 {
+  
+  display: flex;
+  padding: 40px 0 50px 0;
+  box-sizing: border-box;
+}
+#footer div.ftbox2 .ftb1 {
+  
+  width: calc(100% - 35%);
+  line-height: 1.8;
+}
+#footer div.ftbox2 .ftb1 address {
+  
+}
+#footer div.ftbox2 .ftb1 p {
+  
+  gap: 10px;
+  display: flex;
+}
+#footer div.ftbox2 .ftb1 p span {
+}
+#footer p span::before {
+  content: "\2022"; /* Unicode 코드 사용 */
+  margin-right: 5px; 
+}
+#footer div.ftbox2 .ftb1 p span > a {
+  
+  text-decoration: underline;
+}
+#footer div.ftbox2 .ftb2 {
+  width: calc(100% - 65%);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#footer div.ftbox2 .ftb2 label {
+  
+  display: none;
+}
+#footer div.ftbox2 .ftb2 select#familysite {
+  
+  background-color: transparent;
+  border: 1px solid #d8d8d8;
+  color: #666;
+  height: 34px;
+  font-size: 12px;
+}
+#footer div.ftbox2 .ftb2 select#familysite option.familysitetitle {
+  
+}
+#footer div.ftbox2 .ftb2 > a.more {
+  
+  height: 34px;
+  width: 34px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #9e9e9e;
+  border: 0px solid;
+  margin-left: 3px;
+}

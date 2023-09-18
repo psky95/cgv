@@ -1,0 +1,153 @@
+header {
+  width: 100%;
+}
+header .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+header .wrap nav {
+  
+  width: 100%;
+  margin: 0 auto;
+}
+header .wrap nav div.menu {
+  
+  padding-bottom: 30px;
+  position: relative;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #eee;
+}
+header .wrap nav div.menu h1{ 
+  width: 300px;
+  display: flex;
+}
+header .wrap nav div.menu h1 a {
+  
+  background-image: url(../img/cgv.png);
+  width: 120px;
+  height: 54px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+}
+header .wrap nav div.menu h1 span {
+  
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: calc(100% - 122px);
+  letter-spacing: 4px;
+}
+header .wrap nav div.menu ul {
+  
+  display: flex;
+  gap: 35px;
+  font-size: 14px;
+}
+
+header .wrap nav div.menu ul li {
+  
+  display: flex;
+  align-items: center;
+}
+header .wrap nav div.menu ul li:nth-of-type(1) a{
+  
+  font-size: 0;
+  content: "";
+  background-image: url(../img/point.png);
+  width: 136px;
+  height: 39px;
+  background-repeat: no-repeat;
+}
+header .wrap nav div.menu ul li a::before{
+  content: "";
+  height: 35px;
+  width: 35px;
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+header .wrap nav div.menu ul li:nth-of-type(2) a::before{
+  background-image: url(../img/rock.png);
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+header .wrap nav div.menu ul li:nth-of-type(3) a::before{
+  
+  background-image: url(../img/loginJoin.png);
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+header .wrap nav div.menu ul li:nth-of-type(4) a::before{ 
+  background-image: url(../img/member.png);
+  margin-left: 9px;
+  margin-bottom: 2px;
+}
+header .wrap nav div.menu ul li:nth-of-type(5) a::before{ 
+  background-image: url(../img/customer.png);
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+header .wrap nav div.menu ul li a { 
+  display: flex;
+  flex-direction: column;
+}
+header .wrap nav div.ctbox{
+  
+  border-bottom: 2px solid red;
+}
+header .wrap nav div.ctmenu{ 
+  height: 50px;
+  margin: 0 auto;
+  width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .wrap nav div.ctmenu form{
+  
+  align-items: center;
+  display: flex;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+header .wrap nav div.ctmenu form button{
+  
+  background-image: url(../img/search.png);
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+header .wrap nav div.ctmenu form input{
+  
+  height: 25px;
+  width: 200px;
+  border: navajowhite;
+}
+header .wrap nav div.ctmenu ul{
+  
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+}
+header .wrap nav div.ctmenu ul li{
+  
+}
+
+header .wrap nav div.ctmenu ul li a{
+  
+  padding: 0px 30px;
+}
+header .wrap nav div.ctmenu ul li:nth-child(3) a{
+  
+  color: red;
+}

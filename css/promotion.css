@@ -1,0 +1,126 @@
+#promotion {
+  
+}
+#promotion h2 {
+  
+}
+#promotion div.wrap {
+  
+  display: flex;
+  gap: 20px;
+}
+#promotion div.wrap ul {
+  
+  width: calc(100% / 3);
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#promotion div.wrap ul li:nth-child(1){
+  
+  display: flex;
+  padding: 20px 20px 40px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+#promotion div.wrap ul li:nth-child(2),#promotion div.wrap ul li:nth-child(3),#promotion div.wrap ul li:nth-child(4){   
+  display: grid;
+  grid-template-columns: 26% auto;
+  grid-template-rows: auto auto;
+  margin-bottom: 30px;
+}
+#promotion div.wrap ul.pro2 li:nth-child(2),#promotion div.wrap ul.pro2 li:nth-child(3),#promotion div.wrap ul.pro2 li:nth-child(4){
+  
+  grid-template-columns: 28% auto;
+}
+/* pro1 시작 */
+#promotion div.wrap ul li:nth-child(2)::before, #promotion div.wrap ul li:nth-child(3)::before, #promotion div.wrap ul li:nth-child(4)::before{
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-row: 1 / span 2;
+  height: 80px;
+  width: 70px;
+  display: block;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#promotion div.wrap ul.pro1 li:nth-child(2)::before{
+  background-image: url(../img/gift1.jpg);
+  
+}
+#promotion div.wrap ul.pro1 li:nth-child(3)::before{
+  background-image: url(../img/gift2.jpg);
+}
+#promotion div.wrap ul.pro1 li:nth-child(4)::before{
+  background-image: url(../img/gift3.jpg);
+}
+/* pro1끝 */
+/* pro2시작 */
+#promotion div.wrap ul.pro2 li:nth-child(2)::before{
+  background-image: url(../img/gift4.jpg);
+  
+}
+#promotion div.wrap ul.pro2 li:nth-child(3)::before{
+  background-image: url(../img/gift5.jpg);
+  
+}
+#promotion div.wrap ul.pro2 li:nth-child(4)::before{
+  background-image: url(../img/gift6.jpg);
+  
+}
+/* pro2 끝 */
+/* pro3 시작 */
+#promotion div.wrap ul.pro3 li:nth-child(2)::before{
+  background-image: url(../img/gift7.jpg);
+  
+}
+#promotion div.wrap ul.pro3 li:nth-child(3)::before{
+  background-image: url(../img/gift8.jpg);
+  
+}
+#promotion div.wrap ul.pro3 li:nth-child(4)::before{
+  background-image: url(../img/gift9.jpg);
+  
+}
+/* pro3 끝 */
+#promotion div.wrap ul li {
+
+}
+#promotion div.wrap ul li h3 { 
+  font-size: 24px;
+  font-weight: 600;
+}
+#promotion div.wrap ul li:nth-child(1) a{
+  
+  border: 1px solid #eee;
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #666;
+}
+#promotion div.wrap ul li a {
+  
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+}
+#promotion div.wrap ul.pro1 li h4 {
+  
+  align-items: center;
+  display: flex;
+}
+#promotion div.wrap ul li h4{
+  
+}
+#promotion div.wrap ul li p {
+  
+  font-weight: 600;
+}

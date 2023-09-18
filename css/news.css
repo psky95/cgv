@@ -1,0 +1,230 @@
+section#news {
+  
+}
+section#news .wrap { 
+  display: flex;
+  justify-content: space-between;
+}
+section#news .wrap .newsone {
+  
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 470px 380px;
+  border: 1px solid #e4e4e4;
+  border-radius: 15px;
+  padding-left: 40px;
+}
+section#news .wrap .newsone ul {
+  
+}
+section#news .wrap .newsone ul:nth-child(1){
+  
+  order: 1;
+  display: flex;
+}
+section#news .wrap .newsone ul:nth-child(1) >li{
+  
+  display: flex;
+  border-bottom: 1px solid #e4e4e4;
+  align-items: center;
+}
+section#news .wrap .newsone ul:nth-child(1) >li h2{
+  
+}
+section#news .wrap .newsone ul:nth-child(1) >li h3{
+  
+  /*! margin-left: 20px; */
+  /*! float: left; */
+  /*! max-width: 340px; */
+  /*! white-space: nowrap; */
+  /*! text-overflow: ellipsis; */
+  /*! overflow: hidden; */
+}
+section#news .wrap .newsone ul:nth-child(2){
+  
+  order: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section#news .wrap .newsone ul:nth-child(2) >li{
+  
+}
+section#news .wrap .newsone ul:nth-child(3){
+  
+  order: 2;
+  grid-row: span 2;
+  justify-content: center;
+  display: flex;
+  padding: 20px 25px;
+  border-left: 1px solid #e4e4e4;
+  margin-left: 50px;
+}
+section#news .wrap .newsone ul:nth-child(3) > li h2{
+  
+}
+section#news .wrap .newsone ul:nth-child(3) > li h3{
+  
+  font-size: 14px;
+}
+section#news .wrap .newsone ul:nth-child(3) > li p{
+  
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+section#news .wrap .newsone ul li {
+  
+}
+section#news .wrap .newsone ul:nth-child(3) > li{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+}
+
+section#news .wrap .newsone ul li h2 {
+  
+  font-size: 18px;
+  font-weight: 600;
+}
+section#news .wrap .newsone ul li h3 {
+  
+}
+section#news .wrap .newsone ul li h3 > a {
+  
+  font-size: 14px;
+  margin-left: 20px;
+  float: left;
+  max-width: 340px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 15px;
+}
+section#news .wrap .newsone ul li >a {
+  
+  width: 50px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 10px;
+  border-color: #9a9a9a;
+  color: #666;
+}
+section#news .wrap .newsone ul li> span {
+  
+  background-image: url(../img/qrcode.gif);
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 20px 0;
+}
+section#news .wrap .cs {
+  
+  margin-bottom: 20px;
+}
+section#news .wrap .cs h2 {
+  
+}
+section#news .wrap .cs .cs2 {
+  
+  display: flex;
+  margin-left: 20px;
+}
+section#news .wrap .cs .cs2 p {
+  
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+section#news .wrap .cs .cs2 p:last-child{
+  
+  color: #666;
+}
+  
+section#news .wrap .csflex { 
+  gap: 25px;
+}
+section#news .wrap .csflex > a {
+  
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+section#news .wrap .newstwo {
+  
+  position: relative;
+}
+section#news .wrap .newstwo > ul {
+  
+  display: flex;
+  max-width: 226px;
+  overflow: hidden;
+}
+section#news .wrap .newstwo > ul a {
+  
+}
+section#news .wrap .newstwo > ul a > li {
+  
+}
+section#news .wrap .newstwo > ul a > .cgv-bugs{
+  
+  background-image: url(../img/cgv-bugs.png);
+  width: 226px;
+  height: 259px;
+  display: block;
+  border-radius: 15px;
+}
+section#news .wrap .newstwo > ul a > .cgvcard{
+  
+  background-image: url(../img/cgv-card.png);
+  width: 226px;
+  height: 259px;
+  display: block;
+  border-radius: 15px;
+}
+section#news .wrap .newstwo .controler{
+  
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+section#news .wrap .newstwo .controler button{
+  
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  font-size: 0;
+}
+section#news .wrap .newstwo .controler .pause{
+
+}
+section#news .wrap .newstwo .controler .play{
+
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: none;
+}
+section#news .wrap .newstwo .controler .play a{ 
+  background-image: url(../img/play.svg);
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#news .wrap .newstwo .controler .pause a{
+  background-image: url(../img/pause.svg);
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

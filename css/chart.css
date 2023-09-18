@@ -1,0 +1,201 @@
+section#chart {
+  
+  background-color: #eee;
+}
+section#chart .wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section#chart .wrap hgroup { 
+  display: flex;
+  padding-bottom: 30px;
+  width: 1200px;
+}
+section#chart .wrap hgroup h2 {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 27px;
+  border-right: 1px solid #666;
+  width: 115px;
+}
+section#chart .wrap hgroup h3 {
+  color: #666666;
+  font-size: 27px;
+  margin-left: 15px;
+  width: 130px;
+}
+section#chart .wrap .contents {
+  width: 1200px;
+  margin: 0 auto;
+}
+section#chart .wrap .contents ul {
+  /*! display: flex; */
+  /*! overflow: hidden; */
+  /*! gap: 30px; */
+  /*! display: flex; */
+  /*! justify-content: center; */
+}
+section#chart .wrap .slick-dots{
+  display: flex;
+  justify-content: center;
+  bottom: -55px;
+}
+.slick-dots li{
+  
+}
+.slick-dots li button{
+  
+}
+section#chart .wrap .contents ul button::before{
+  
+  font-size: 10px;
+}
+section#chart .wrap .contents ul li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#chart .wrap .contents ul li div.contentsBox{
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+section#chart .wrap .contents ul li div.contentsBox a{
+  width: 170px;
+  border: 1px solid;
+  margin-left: 4px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+  border: none;
+  color: white;
+}
+section#chart .wrap .contents ul li div.contentsBox button{
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  background-color: #11151a;
+  border: 1px solid black;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+section#chart .wrap .contents ul li div.contentsBox button::before{
+  content: "";
+  
+  background-image: url(../img/heart.svg);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 7px;
+}
+section#chart .wrap .contents ul li div.contentsBox button span{
+  
+  padding-right: 4px;
+  font-size: 14px;
+}
+section#chart .wrap .contents ul li a{
+  
+}
+section#chart .wrap .contents ul li> a {
+
+}
+section#chart .wrap .contents ul li a img{
+  width: 277px;
+  height: 380px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+section#chart .wrap .contents ul li p span {
+  
+}
+section#chart .wrap form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 315px;
+  justify-content: space-between;
+  display: flex;
+}
+section#chart .slick{
+  
+}
+section#chart .slick-prev{ 
+  left: -10px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0;
+  z-index: 2;
+  background-image: url(../img/arrowB.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  top: 45%;
+}
+section#chart .slick-next{
+  right: -10px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 0;
+  z-index: 2;
+  background-image: url(../img/arrowN.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  top: 45%;
+  
+}section#chart .slick-prev:hover, .slick-next:hover{ 
+  opacity: 0.8;
+  background-color: white;
+}
+section#chart .slick-prev::before{
+  color: transparent;
+}
+section#chart .slick-next::before{
+  color: transparent;
+}
+section#chart .wrap a {
+  
+}
+section#chart .wrap a.moreall{
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  position: absolute;
+  top: 105px;
+  right: 130px;
+}
+section#chart .wrap a.moreall::after{
+  content: "";
+  background-image: url(../img/arrowR.png);
+  height: 14px;
+  width: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+section#chart .wrap a.more span{
+  
+}
