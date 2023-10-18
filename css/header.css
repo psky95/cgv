@@ -138,14 +138,19 @@ header .wrap nav div.ctmenu ul{
   display: flex;
   font-size: 17px;
   align-items: center;
+  height: 100%;
 }
 header .wrap nav div.ctmenu ul li{
   
+  height: 100%;
 }
 
 header .wrap nav div.ctmenu ul li a{
   
   padding: 0px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 header .wrap nav div.ctmenu ul li:nth-child(3) a{
   

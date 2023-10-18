@@ -184,7 +184,7 @@ section#chart .wrap a.moreall{
   font-size: 14px;
   position: absolute;
   top: 105px;
-  right: 130px;
+  right: 10px;
 }
 section#chart .wrap a.moreall::after{
   content: "";

@@ -157,7 +157,6 @@ section#news .wrap .csflex > a {
   font-size: 14px;
 }
 section#news .wrap .newstwo {
-  
   position: relative;
 }
 section#news .wrap .newstwo > ul {
@@ -166,30 +165,21 @@ section#news .wrap .newstwo > ul {
   max-width: 226px;
   overflow: hidden;
 }
-section#news .wrap .newstwo > ul a {
-  
-}
-section#news .wrap .newstwo > ul a > li {
-  
-}
-section#news .wrap .newstwo > ul a > .cgv-bugs{
-  
+section#news .wrap .newstwo > ul li.cgv-bugs{
   background-image: url(../img/cgv-bugs.png);
   width: 226px;
   height: 259px;
   display: block;
   border-radius: 15px;
 }
-section#news .wrap .newstwo > ul a > .cgvcard{
-  
+section#news .wrap .newstwo > ul li.cgvcard{ 
   background-image: url(../img/cgv-card.png);
   width: 226px;
   height: 259px;
   display: block;
   border-radius: 15px;
 }
-section#news .wrap .newstwo .controler{
-  
+section#news .wrap .newstwo .controler{  
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -200,9 +190,6 @@ section#news .wrap .newstwo .controler button{
   border: 1px solid #e3e3e3;
   font-size: 0;
 }
-section#news .wrap .newstwo .controler .pause{
-
-}
 section#news .wrap .newstwo .controler .play{
 
   position: absolute;
@@ -210,17 +197,8 @@ section#news .wrap .newstwo .controler .play{
   right: 0;
   display: none;
 }
-section#news .wrap .newstwo .controler .play a{ 
-  background-image: url(../img/play.svg);
-  width: 35px;
-  height: 35px;
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#news .wrap .newstwo .controler .pause a{
-  background-image: url(../img/pause.svg);
+section#news .wrap .newstwo .controler .play img,
+section#news .wrap .newstwo .controler .pause img{ 
   width: 35px;
   height: 35px;
   display: block;

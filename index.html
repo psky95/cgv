@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psky95.github.io/cgv/">
+    <meta property="og:description" content="CGV 홈페이지">
+    <meta property="og:keywords" content="CGV,영화,영화 예매,극장">
+    <meta property="og:title" content="CGV">
+    <meta name="og:image" content="이미지프로필삽입예정"/>
+    <meta name="description" content="CGV 홈페이지">
+    <meta name="keywords" content="CGV,영화,영화 예매,극장">
     <title>cgv</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -16,22 +24,19 @@
     <link rel="stylesheet" href="css/promotion.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
-
     <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" script type="text/javascript"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- 슬릭 -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        // 각 영역 슬릭
        $(document).ready(function(){
-
             // 차트의 슬릭 애니메이션
            $("section#chart .wrap .contents ul.contentslide").slick({
                 infinite: true,
@@ -76,47 +81,31 @@
             border-radius: 10px;
         }
     </style>
-    <script type="text/javascript">
+    <script>
+        // 타이틀 메뉴 슬라이드 다운 & 스페셜 영역 js
         $(document).ready(function(){
-
             $("header .wrap nav div.ctmenu ul li").mouseenter(function(){ 
-                $("div.dmenu").slideDown(300);
+                $("div.dmenu").stop().slideDown(300);
                     
                 $("#titie").mouseenter(function(){
                 $("div.dmenu").slideUp(300);
-
                 });
+
                 $("header .wrap nav div.menu").mouseenter(function(){
-                $("div.dmenu").slideUp(300);
-
+                $("div.dmenu").stop().slideUp(300);
                 });
-
             });
             $("section#special div.spHall ul li").mouseenter(function(){
+                var index = $(this).index() + 1;
                 $(this).addClass("special");
                 $(this).siblings().removeClass("special");
-            });
-            $("section#special div.spHall ul li").mouseenter(function(){
+                
+                $("section#special div.spHall a div img:nth-child(" + index + ")").show();
+                $("section#special div.spHall a div img:nth-child(" + index + ")").siblings().hide();
+                
                 $(this).children().children("h3").addClass("spbold");
                 $(this).siblings().children().children("h3").removeClass("spbold");
             });
-            $("section#special div.spHall ul li:nth-child(1)").mouseenter(function(){
-                $("section#special div.spHall a div img:nth-child(1)").show();
-                $("section#special div.spHall a div img:nth-child(1)").siblings().hide();
-            });
-            $("section#special div.spHall ul li:nth-child(2)").mouseenter(function(){
-                $("section#special div.spHall a div img:nth-child(2)").show();
-                $("section#special div.spHall a div img:nth-child(2)").siblings().hide();
-            });
-            $("section#special div.spHall ul li:nth-child(3)").mouseenter(function(){
-                $("section#special div.spHall a div img:nth-child(3)").show();
-                $("section#special div.spHall a div img:nth-child(3)").siblings().hide();
-            });
-            $("section#special div.spHall ul li:nth-child(4)").mouseenter(function(){
-                $("section#special div.spHall a div img:nth-child(4)").show();
-                $("section#special div.spHall a div img:nth-child(4)").siblings().hide();
-            });
-
         });
     </script>  
 </head>
@@ -145,7 +134,7 @@
                             <li><a href="">이벤트</a></li>
                             <li><a href="">혜택</a></li>
                         </ul>
-                        <form action="">
+                        <form action="http://www.cgv.co.kr/search/?query=%ED%95%84%EB%9E%80%20%ED%83%81%20%EB%B8%B8">
                             <input type="text">
                             <button>검색</button>
                         </form>
@@ -234,7 +223,7 @@
                             <i class="uk-icon-pause"></i></button>                 
                     </div>
                     <!-- partial -->
-                    </script><script  src="movieaction/script.js"></script>
+                    <script src="movieaction/script.js"></script>
                 </div>
             </div>    
         </div>
@@ -367,37 +356,37 @@
                 <li>
                     <a href="" class="ev1">
                         <h3 class="h5">[핑크퐁 시네마 콘서트3] 다시 돌아온 핑크퐁의 무릎 해방 일지</h3>
-                        <time>2023.07.21~2023.08.15</time>
+                        <time datetime="2023-07-21">2023.07.21~2023.08.15</time>
                     </a>
                 </li>
                 <li>
                     <a href="" class="ev2">
                         <h3 class="h5">[한국 영화 BIG3] IMAX 릴레이 특가</h3>
-                        <time>2023.07.12~2023.08.14</time>
+                        <time datetime="2023-07-12">2023.07.12~2023.08.14</time>
                     </a>
                 </li>
                 <li>
                     <a href="" class="ev3">
                         <h3 class="h5">[더 문] 필름마크</h3>
-                        <time>2023.07.28~2023.08.10</time>
+                        <time datetime="2023-07-28">2023.07.28~2023.08.10</time>
                     </a>
                 </li>
                 <li>
                     <a href="" class="ev4">
                         <h3 class="h5">[콘크리트 유토피아] 필름마크</h3>
-                        <time>2023.07.28~2023.08.10</time>
+                        <time datetime="2023-07-28">2023.07.28~2023.08.10</time>
                     </a>
                 </li>
                 <li>
                     <a href="" class="ev5">
                         <h3 class="h5">[극장판 슈퍼윙스] 앵콜여름방학 스페셜 상영회</h3>
-                        <time>2023.08.02~2023.08.05</time>
+                        <time datetime="2023-08-02">2023.08.02~2023.08.05</time>
                     </a>
                 </li>
                 <li>
                     <a href="" class="ev6">
                         <h3 class="h5">MOINTS 커뮤니티신규 론칭 이벤트!</h3>
-                        <time>2023.07.18~2023.08.22</time>
+                        <time datetime="2023-07-18">2023.07.18~2023.08.22</time>
                     </a>
                 </li>
             </ul>
@@ -413,10 +402,10 @@
         <div class="spHall">
             <a href="" class="spcotents">
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="img/spe1.png" alt="호텔컨셉의 프리미엄관">
+                    <img src="img/spe2.png" alt="신개념 소셜 상영관">
+                    <img src="img/spe3.png" alt="모션시트와 오감체험">
+                    <img src="img/spe4.png" alt="쉐프가 있는 영화관">
                 </div>
             </a>
             <ul>
@@ -460,19 +449,19 @@
                 </li>
                 <li>
                     <a href="">
-                        <h4 class="h5"><신체모음.zip>조각모음쿠폰 선착순 판매</h4>
+                        <h4 class="h5">&lt;신체모음.zip&gt;조각모음쿠폰 선착순 판매</h4>
                         <p>14,000원</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <h4 class="h5"><마야3: 숲속왕국의 위기>얼리버드 관람권 세트(2매)</h4>
+                        <h4 class="h5">&lt;마야3: 숲속왕국의 위기&gt;얼리버드 관람권 세트(2매)</h4>
                         <p>14,000원</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <h4 class="h5"><핑크퐁 시네마 콘서트3>패키지 관람권(성인+아동)</h4>
+                        <h4 class="h5">&lt;핑크퐁 시네마 콘서트3&gt;패키지 관람권(성인+아동)</h4>
                         <p>14,000원</p>
                     </a>
                 </li>
@@ -533,7 +522,7 @@
                 <ul>
                     <li>
                         <h2>공지사항</h2>
-                        <h3><a href="">[극장][CGV대구스타디움] <싸이 콘서트 - 흠뻑쇼>로 인한 교통혼잡 안내</a></h3>
+                        <h3><a href="">[극장][CGV대구스타디움] &lt;싸이 콘서트 - 흠뻑쇼&gt;로 인한 교통혼잡 안내</a></h3>
                         <a href="" class="more">더보기</a>
                     </li>
                 </ul>
@@ -565,18 +554,19 @@
             </div>
             <div class="newstwo">
                 <ul class="contentslide">
-                    <a href=""><li class="cgvcard"></li></a>
-                    <a href=""><li class="cgv-bugs"></li></a>
+                    <li class="cgvcard"><a href=""></a></li>
+                    <li class="cgv-bugs"><a href=""></a></li>
                 </ul>
                 <div class="controler">
-                    <button class="play"><a href="">시작</a></button>
-                    <button class="pause"><a href="">정지</a></button>
+                    <button class="play"><img src="img/play.svg" alt="시작">시작</button>
+                    <button class="pause"><img src="img/pause.svg" alt="정지">정지</button>
                 </div>
             </div>
             
         </div>
     </section>
     <section id="footer" class="paddingT50">
+        <h2 class="hide">하단 광고배너와 푸터영역</h2>
         <div class="adbox">
             <div class="wrap">
                 <a href="http://ad.cgv.co.kr/click/CGV/CGV_201401/main@Bottom?ads_id=49840&creative_id=72893&click_id=93495&content_series=&event=">
@@ -619,8 +609,9 @@
                 <p>© CJ CGV. All Rights Reserved</p>
             </div>
             <div class="ftb2">
-                <label for="">CJ그룹 계열사 바로가기</label>
-                <select name="" id="familysite">
+                <input type="checkbox" id="groupAccess">
+                <label for="groupAccess">CJ그룹 계열사 바로가기</label>
+                <select name="familySite" id="familysite">
                     <option value="" class="familysitetitle">계열사 바로가기</option>
                     <optgroup label="CJ그룹">
                         <option value="http://www.cj.net/">CJ주식회사</option>

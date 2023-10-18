@@ -41,35 +41,15 @@ section#special div.spHall a div img:nth-child(1){
   background-image: url(../img/spe1.png);
  
 }
-section#special div.spHall a div img:nth-child(2){
-   background-image: url(../img/spe2.png);
-   position: absolute;
-   left: 0;
-   top: 0;
-   display: none;
-}
-section#special div.spHall a div img:nth-child(3){
-   background-image: url(../img/spe3.png);
-   position: absolute;
-   left: 0;
-   top: 0;
-   display: none;
-}
+section#special div.spHall a div img:nth-child(2),
+section#special div.spHall a div img:nth-child(3),
 section#special div.spHall a div img:nth-child(4){
-   background-image: url(../img/spe4.png);
    position: absolute;
    left: 0;
    top: 0;
    display: none;
 }
-section#special div.spHall a.spcontents {
-  
-}
-section#special div.spHall a.spcontents div img {
-  
-}
-section#special div.spHall ul {
-  
+section#special div.spHall ul { 
   width: 48%;
 }
 section#special div.spHall ul li {
