@@ -6,7 +6,7 @@ CGV 웹사이트를 하드코딩하여 클론 제작하였습니다
 
 
 ## 클론 웹사이트 스크린 샷 링크
-클론코딩페이지 url : (https://psky95.github.io/cgv/)
+클론코딩페이지 url : (https://psky95.github.io/cgv/)  
 ![섬_클론](https://github.com/psky95/cgv/assets/142555226/cafb9d8d-f905-4712-8b19-91d1394308c4)
 
 
