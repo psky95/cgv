@@ -1,34 +1,39 @@
 section#chart {
-  
   background-color: #eee;
 }
+
 section#chart .wrap {
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
 section#chart .wrap hgroup { 
   display: flex;
   padding-bottom: 30px;
   width: 1200px;
 }
+
 section#chart .wrap hgroup h2 {
   margin-left: 10px;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 1.6875rem;
   border-right: 1px solid #666;
   width: 115px;
 }
-section#chart .wrap hgroup h3 {
+
+section#chart .wrap hgroup p {
   color: #666666;
-  font-size: 27px;
   margin-left: 15px;
   width: 130px;
+  font-size: 1.625rem;
 }
+
 section#chart .wrap .contents {
   width: 1200px;
   margin: 0 auto;
 }
+
 section#chart .wrap .contents ul {
   /*! display: flex; */
   /*! overflow: hidden; */
@@ -36,33 +41,39 @@ section#chart .wrap .contents ul {
   /*! display: flex; */
   /*! justify-content: center; */
 }
+
 section#chart .wrap .slick-dots{
   display: flex;
   justify-content: center;
   bottom: -55px;
 }
+
 .slick-dots li{
   
 }
+
 .slick-dots li button{
   
 }
+
 section#chart .wrap .contents ul button::before{
-  
-  font-size: 10px;
+  font-size: 0.625rem;
 }
+
 section#chart .wrap .contents ul li {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 section#chart .wrap .contents ul li div.contentsBox{
   width: 100%;
   display: flex;
   margin-top: 15px;
   justify-content: center;
 }
+
 section#chart .wrap .contents ul li div.contentsBox a{
   width: 170px;
   border: 1px solid;
@@ -76,6 +87,7 @@ section#chart .wrap .contents ul li div.contentsBox a{
   border: none;
   color: white;
 }
+
 section#chart .wrap .contents ul li div.contentsBox button{
   width: 100px;
   height: 35px;
@@ -88,9 +100,9 @@ section#chart .wrap .contents ul li div.contentsBox button{
   display: flex;
   justify-content: center;
 }
+
 section#chart .wrap .contents ul li div.contentsBox button::before{
   content: "";
-  
   background-image: url(../img/heart.svg);
   height: 20px;
   width: 20px;
@@ -100,17 +112,20 @@ section#chart .wrap .contents ul li div.contentsBox button::before{
   display: inline-block;
   margin-right: 7px;
 }
+
 section#chart .wrap .contents ul li div.contentsBox button span{
-  
   padding-right: 4px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
+
 section#chart .wrap .contents ul li a{
   
 }
+
 section#chart .wrap .contents ul li> a {
 
 }
+
 section#chart .wrap .contents ul li a img{
   width: 277px;
   height: 380px;
@@ -119,9 +134,11 @@ section#chart .wrap .contents ul li a img{
   background-repeat: no-repeat;
   border-radius: 5px;
 }
+
 section#chart .wrap .contents ul li p span {
   
 }
+
 section#chart .wrap form {
   position: absolute;
   left: 0;
@@ -130,9 +147,11 @@ section#chart .wrap form {
   justify-content: space-between;
   display: flex;
 }
+
 section#chart .slick{
   
 }
+
 section#chart .slick-prev{ 
   left: -10px;
   border-radius: 50%;
@@ -149,6 +168,7 @@ section#chart .slick-prev{
   background-color: white;
   top: 45%;
 }
+
 section#chart .slick-next{
   right: -10px;
   border-radius: 50%;
@@ -163,29 +183,35 @@ section#chart .slick-next{
   height: 35px;
   width: 35px;
   background-color: white;
-  top: 45%;
-  
-}section#chart .slick-prev:hover, .slick-next:hover{ 
+  top: 45%; 
+}
+
+section#chart .slick-prev:hover, .slick-next:hover{ 
   opacity: 0.8;
   background-color: white;
 }
+
 section#chart .slick-prev::before{
   color: transparent;
 }
+
 section#chart .slick-next::before{
   color: transparent;
 }
+
 section#chart .wrap a {
   
 }
+
 section#chart .wrap a.moreall{
   align-items: center;
   justify-content: space-evenly;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: absolute;
   top: 105px;
   right: 10px;
 }
+
 section#chart .wrap a.moreall::after{
   content: "";
   background-image: url(../img/arrowR.png);
@@ -196,6 +222,7 @@ section#chart .wrap a.moreall::after{
   background-size: contain;
   display: inline-block;
 }
+
 section#chart .wrap a.more span{
   
 }

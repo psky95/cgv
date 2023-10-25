@@ -1,33 +1,35 @@
 section#special {
-  
   width: 1200px;
   margin: 0 auto;
   position: relative;
   padding-bottom: 50px;
 }
-section#special div.wrap {
-  
+
+section#special div.wrap {  
   padding-bottom: 30px;
 }
+
 section#special div.wrap h2 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 600;
 }
+
 section#special div.spHall {
-  
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 section#special div.spHall> a{
   width: 48%;
 }
+
 section#special div.spHall a div{
-  
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 section#special div.spHall a div img{
    background-repeat: no-repeat;
    background-size: cover;
@@ -36,11 +38,11 @@ section#special div.spHall a div img{
    height: 100%;
    border-radius: 15px;
 }
+
 section#special div.spHall a div img:nth-child(1){
-  
   background-image: url(../img/spe1.png);
- 
 }
+
 section#special div.spHall a div img:nth-child(2),
 section#special div.spHall a div img:nth-child(3),
 section#special div.spHall a div img:nth-child(4){
@@ -49,53 +51,60 @@ section#special div.spHall a div img:nth-child(4){
    top: 0;
    display: none;
 }
+
 section#special div.spHall ul { 
   width: 48%;
 }
+
 section#special div.spHall ul li {
-  
   box-sizing: border-box;
   border: 1px solid transparent;
 }
+
 section#special div.spHall ul li:nth-child(1){
   border-bottom: 1px solid #e9e9e9;
   border-top: 1px solid #e9e9e9;
 }
+
 section#special div.spHall ul li:nth-child(2){
   border-bottom: 1px solid #e9e9e9;
 }
+
 section#special div.spHall ul li:nth-child(3){
   border-bottom: 1px solid #e9e9e9;
 }
+
 section#special div.spHall ul li:nth-child(4){
   border-bottom: 1px solid #e9e9e9;
 }
+
 section#special div.spHall ul li a.splist {  
   display: flex;
   padding: 25px 40px;
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 section#special div.spHall ul li a.splist h3 {
-  
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 section#special div.spHall ul li a.splist p {
-  
   padding: 5px 5px;
   background-color: #eee;
 }
+
 section#special div.topmore {
   position: absolute;
   top: 50px;
   right: 23px;
 }
+
 section#special div.topmore a.moreall {
-  
   align-items: center;
   justify-content: space-evenly;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
+
 section#special div.topmore a.moreall::after{
   content: "";
   content: "";
@@ -107,14 +116,17 @@ section#special div.topmore a.moreall::after{
   background-size: contain;
   display: inline-block;
 }
+
 .special{
     border: 1px solid !important;
     border-radius: 15px
   }
+
 .spbold{
   font-weight: bold;
   color: #ed3124;
 }
+
 .spblock{
   display: block;
 }
